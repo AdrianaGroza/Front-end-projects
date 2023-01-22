@@ -1,0 +1,208 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-style: normal;    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.row-center {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    max-width: 1440px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#navbar-brand {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 32px; 
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.navbar-wraper{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-links-container > a{
+    font-weight: 600;
+    font-size: 0.88em;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0 20px;
+}
+
+.login-button {
+    background-color: #fff;
+    color: #23A6F0;
+    border: 1px solid #bcd0e5;
+    height: 52px;
+    font-weight: 700;
+    font-size: 0.88em;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border:none; 
+
+}
+
+.member-button {
+    font-weight: 700;
+    font-size: 0.88em;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    background-color: #23A6F0;
+    color: #fff;
+    height: 52px;
+    padding: 15px 25px;
+    border-radius: 5px;         
+    cursor: pointer;
+    border: none;
+    /*white-space: pre;*/
+}
+
+#arrow-icon {
+    height: 10px;  
+    margin-left: 10px;  
+}
+
+.navbar-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu-icon {
+    width: 24px;  
+    height: 22px;  
+    cursor: pointer
+}
+
+#shopping-icon{
+    width: 24px;  
+    height: 22px;
+    padding-right: 24px;
+}
+
+#search-icon{
+    width: 24px;  
+    height: 22px;
+    padding-right: 24px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+#menu-collapse{
+    display: none;
+}
+
+@media screen and (max-width: 815px) {
+    .menu-icon{
+        display: flex;
+    }
+
+    .content-container {
+        padding: 0 20px;
+    }
+
+    .navbar-wraper{
+        background-color: #F6F6F6;
+    }
+
+    .navbar-wraper > .navbar-buttons-container{
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #F6F6F6;
+        box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.25);
+        overflow-y: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .login-button {
+        background-color: #F6F6F6;
+    }
+
+    .navbar-buttons-container > .navbar-links-container > a {
+        display: flex;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .navbar-buttons-container > .navbar-button-wrapper {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar-buttons-container > .navbar-button-wrapper > button {
+        margin: 5px 0;
+    }
+
+    .navbar-buttons-container > .navbar-links-container > a:hover {
+        text-decoration: underline;
+    }
+
+    .navbar > #menu-collapse:not(:checked) ~ .navbar-wraper > .navbar-buttons-container {
+        height: 0;
+    }
+
+    .navbar > #menu-collapse:checked ~ .navbar-wraper > .navbar-buttons-container {
+        max-height: 100vh;
+        height: auto;
+        padding: 10px 10px;
+    }
+
+    .section-2-rows > h3 {
+        padding: 10px 10px;
+    }
+
+    .section-columns {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .main-2-col {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .section-3-columns{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;        
+    }
+
+}
