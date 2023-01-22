@@ -119,6 +119,64 @@
     display: none;
 }
 
+.main-header {
+    font-weight: 800;
+    font-size: 3.63em;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.main-content-left .main-content-right {
+    width: 50%;    
+}
+
+.main-subtitle{
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    padding: 35px 0 35px 0;
+    color: #737373;
+}
+
+.main-right-bg{
+    width: 100%;
+    height: auto;
+    pointer-events: none;     
+}
+
+.quote-button{
+    background-color: #23A6F0;
+    color: #FFFFFF;
+    border-radius: 37px;
+    padding: 15px 15px;
+    font-weight: 700;
+    font-size: 0.88em;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    white-space: pre;
+}
+
+.learn-button{    
+    background-color: #FFFFFF;
+    color: #23A6F0;
+    border: 1px solid #23A6F0;
+    border-radius: 37px;
+    margin: 0 10px 0 10px;
+    padding: 10px 10px;    
+    font-weight: 700;
+    font-size: 0.88em;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    cursor: pointer;  
+    white-space: pre;
+}
+
+
 @media screen and (max-width: 815px) {
     .menu-icon{
         display: flex;
